@@ -1,0 +1,1182 @@
+/*顶部banner start*/
+.topbanner{
+    background-color: #ed5b34;
+    height: 80px;
+}
+.topbanner .banxin{
+    position: relative;
+    height: 80px;
+}
+.topbanner .banxin .soe{
+    display:block;
+    height: 80px;
+    background: url(../images/index/gg.jpg) no-repeat;
+}
+.topbanner .banxin .soe i{
+    display:inline-block;
+    height: 80px;
+    width: 150px;
+    background: url(../images/index/618.jpg) no-repeat;
+}
+.topbanner .banxin .wrong{/*之后会用字体图标来做，现在先模拟样式*/
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size:20px;
+    color:#fff;
+    cursor:pointer;  /*改变鼠标悬停样式*/
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top:0;
+    right:0;
+}
+/*顶部banner end*/
+
+/*顶部nav start*/
+
+.topnav{
+    height: 30px;
+    line-height: 30px;
+    border-bottom:1px solid #ddd;
+    background-color: #e3e4e5;
+}
+.topnav .fl .dropdown a{
+    display: block;
+    height: 30px;
+    padding:0 7px 0 26px;
+    margin-left: 200px;
+    background: url(../images/index/location.png) no-repeat 9px center;
+}
+
+.topnav .fr ul li{
+    float: left;
+    padding:0 12px;
+    position: relative;
+}
+.topnav .fr ul li .regsiter{
+    color:#f10215;
+}
+.topnav .fr ul li .regsiter:hover{
+    color:#ed5b34;
+}
+.topnav .fr ul li.line{ /*可以用line定义竖线*/
+    border-left:1px solid #ccc;
+    height: 10px;
+    padding:0;  /*竖线左右不需要padding*/
+    margin-top:12px;
+}
+.dropdown i{  /*利用父盒子遮挡菱形的方法做下拉菜单的样式*/
+    position: relative;
+    /*只有绝对定位，固定定位和浮动才能自动转化为行内块元素*/
+    display:inline-block;
+    width: 15px;
+    height: 7px;
+    font:400 12px/15px simsun;
+    /*行高等于15px,是为了使菱形的顶端与父盒子顶端对齐  */
+    overflow: hidden;
+
+}
+
+.dropdown i s{
+    color:#999;
+    text-decoration: none;
+    position: absolute;
+    top: -7px;
+    left: 0;
+
+}
+.topnav .fr ul li .teljd{
+    width: 60px;
+    height: 60px;
+    background: url(../images/index/2wm.png);
+    position: absolute;
+    top:30px;
+    left:50%;
+    margin-left:-30px;
+
+}
+.topnav .fr ul li .triangle{
+    border:5px solid #e3e4e5;
+    border-bottom:5px solid #fff;
+    position: absolute;
+    bottom:0;
+    left:50%;
+    margin-left:-5px;
+}
+/*顶部nav end*/
+
+/*头部header start*/
+.header .banxin{
+    height: 140px;
+}
+/*头部左侧logo*/
+.header .banxin .hleft h1{
+    position: relative;
+    height: 140px;
+    width: 190px;
+}
+.header .banxin .hleft a{
+    position: absolute;
+    top:-30px;
+    width:190px;
+    height: 170px;
+    text-indent:-200px; /*将文字设置到可见区域外*/
+    overflow:hidden; /*将溢出的文字隐藏，不显示超出内容的部分*/
+    background: url(../images/index/logo.gif);
+}
+
+/*头部右侧上半部分*/
+.header .banxin .hright{
+    width: 1000px;
+    height: 140px;
+}
+.header .banxin .hright .hrtop{
+    margin-top: 25px;
+}
+.header .banxin .hright .hrtop .search{
+    width: 550px;
+    margin-left:140px;
+    position: relative;
+}
+.header .banxin .hright .hrtop .search input{
+    width: 498px;
+    height: 35px;
+    border: 1px solid #f10215;
+    color: #989898;
+    font-size:12px;
+    padding-left:5px;
+}
+.header .banxin .hright .hrtop .search button{
+    height: 37px;
+    width: 52px;
+    background: #f10215 url(../images/index/search.png) no-repeat center center;
+    position: absolute;
+    top:0;
+    right:0;
+}
+.header .banxin .hright .hrtop .search .camera{
+    height: 15px;
+    width: 19px;
+    background: url(../images/index/sprite-photo-search.png) no-repeat;
+    position: absolute;
+    top:10px;
+    right:65px;
+    cursor:pointer;
+}
+.header .banxin .hright .hrtop .search .camera:hover{
+    background: url(../images/index/sprite-photo-search.png) no-repeat -30px 0;
+}
+.header .banxin .hright .hrtop .shopping{
+    width: 114px;
+    height: 35px;
+    line-height:35px;
+    background: #fff url(../images/index/car.png) no-repeat   55px  8px;
+    margin-left: 31px;
+    border: 1px solid #e3e4e5;
+    font-size: 12px;
+    color:#f10215;
+    padding-left:76px;
+}
+.header .banxin .hright .hrtop .shopping .sum{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    color:#fff;
+    background-color: #f10215;
+    border-radius:50%;
+    margin: 5px 0 0 5px;
+}
+.header .banxin .hright  .words{
+    height: 30px;
+    line-height: 30px;
+    margin-left:140px;
+    font-size: 10px;
+
+}
+.header .banxin .hright  .words ul li.firstli{
+    padding-left:0;
+}
+.header .banxin .hright  .words ul .firstli a{
+    color:#f10215;
+ }
+.header .banxin .hright  .words ul li{
+    float: left;
+    padding-left: 10px;
+}
+/*头部右侧下半部分*/
+.header .banxin .hright .hrbottom{
+    margin-left:40px;
+    margin-top: 12px;
+    position:relative;
+}
+.header .banxin .hright .hrbottom ul li{
+    float: left;
+    padding-right:32px;
+}
+.header .banxin .hright .hrbottom ul li a{
+    font:700 16px/32px "Microsoft Yahei";
+    color: #555;
+}
+.header .banxin .hright .hrbottom ul li a:hover{
+    color: #ed5b34;
+}
+.header .banxin .hright .hrbottom ul li.pdr{
+     padding-right:20px;
+ }
+.header .banxin .hright .hrbottom ul .line{ /*可以用line定义竖线*/
+    border-left:1px solid #ccc;
+    height: 10px;
+    padding:0;
+    margin:12px 20px 0 0;
+}
+.header .banxin .hright .hrbottom .ppsd{
+    position: absolute;
+    top:-10px;
+    right:0;
+}
+/*头部header end  */
+
+/*轮播区lbq start*/
+.lbq{
+    height: 480px;
+    background:  url(../images/index/bannerbg.png) center center  no-repeat;
+}
+.lbq .sidebar{
+    width: 190px;
+    height: 480px;
+    background-color: #6e6568;
+}
+.lbq .sidebar ul{
+    padding:12px 0;
+}
+.lbq .sidebar ul li{
+    padding:6px 0 0 12px;
+}
+.lbq .sidebar ul li a,i{
+    color: #fff;
+}
+.lbq .sidebar ul li a:hover{
+    color: #ed5b34;
+}
+.lbq .banxin .banner{
+    width: 790px;
+    height: 480px;
+    margin-left: 10px;
+}
+.lbq .banxin .banner .btop{
+    position: relative;
+    margin-bottom:5px;
+}
+.lbq .banxin .banner .btop:hover span{
+    /*鼠标放置btop整个区域时，span标签显示*/
+    display:block;
+}
+.lbq .banxin .banner .btop span{
+    position: absolute;
+    top:50%;
+    margin-top:-30px;
+    font-size: 20px;
+    color:#fff;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: rgba(0,0,0,.3);
+    display:none;
+}
+.lbq .banxin .banner .btop span.gt{
+    right:0;
+}
+.lbq .banxin .banner .btop span:hover{
+    background: rgba(0,0,0,.7)
+}
+.lbq .banxin .banner .btop ul{
+    width: 146px;
+    height: 12px;
+    border-radius:12px;  /*全圆是可以设置50%，或者设置为宽度的一半。设置为高度的一半是四角半圆*/
+    padding:5px 8px;
+    background-color: rgba(255,255,255,.3);
+    position: absolute;
+    bottom: 8px;
+    left:50%;
+    margin-left:-73px;
+}
+.lbq .banxin .banner .btop ul li{
+    width: 12px;
+    height: 12px;
+    border-radius:6px;
+    background-color: #fff;
+    float: left;
+    margin:0 3px;
+}
+.lbq .banxin .banner .btop ul .thirdli{
+    background-color: #db192a;
+}
+.lbq .banxin .banner .btop .sixone{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 75px;
+    height: 100px;
+    background:  url(../images/index/6182.png) no-repeat;
+}
+.lbq .banxin .banner .bbottom a{
+    display:inline-block;
+    width: 390px;
+    height: 130px;
+    background:  url(../images/index/b1.jpg) no-repeat;
+}
+.lbq .banxin .banner .bbottom a.computer{
+    margin-left:5px;
+    background:  url(../images/index/b2.jpg) no-repeat;
+}
+.lbq .banxin .message{
+    height: 480px;
+    width: 190px;
+    background-color: #fff;
+}
+.lbq .banxin .message .personal{
+    padding: 15px;
+    height: 85px;
+    border-bottom:1px solid #ccc;
+}
+.lbq .banxin .message .personal .top .tx{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border:2px solid #c9a65b;
+    border-radius:50%;
+}
+.lbq .banxin .message .personal .top .loginreg{
+    width:100px;
+}
+.lbq .banxin .message .personal .top .loginreg p{
+    font-size: 12px;
+    color:#666;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    /*文字溢出，对溢出部分显示省略标记，必须设宽度，与overflow:hidden搭配使用*/
+    vertical-align:top;
+    overflow:hidden;
+    /*可以对父元素设置宽度和overflow:hidden,但此父元素有浮动*/
+}
+.lbq .banxin .message .personal .bottom  a{
+    width: 70px;
+    height: 20px;
+    display: inline-block;
+    color:#e01222;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid #e01222;
+    background-color: #fff;
+    margin-top:5px;
+}
+.lbq .banxin .message .personal .bottom a:hover{
+    background-color:#e01222;
+    color: #fff;
+}
+.lbq .banxin .message .notice{
+    padding:0 15px;
+}
+.lbq .banxin .message .notice .noticetitle{
+    border-bottom:1px solid #ccc;
+    margin-bottom:5px;
+    line-height: 14px;
+    font-size: 12px;
+}
+.lbq .banxin .message .notice .noticetitle ul li{
+    float: left;
+    padding:5px;
+}
+.lbq .banxin .message .notice .noticetitle ul li.l{
+    margin-left:20px;
+}
+.lbq .banxin .message .notice .noticetitle ul li.line{
+    height: 5px;
+    border-left:1px solid #ccc;
+    margin:5px 0 0 5px;
+}
+.lbq .banxin .message .notice .noticetitle ul li:hover{
+    border-bottom:3px solid #e01222;
+}
+.lbq .banxin .message .notice .noticecon ul{
+    width: 160px;
+    height: 100px;
+}
+.lbq .banxin .message .notice .noticecon ul li{
+    padding-left:5px;
+    line-height: 24px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.lbq .banxin .message .guild{
+    margin-top:20px;
+    overflow:hidden;
+}
+.lbq .banxin .message .guild ul{
+    width: 192px; /*目的是溢出边框 父元素切掉*/
+}
+.lbq .banxin .message .guild ul li a{
+    width: 47px;
+    height: 30px;
+    float: left;
+    border-top:1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    padding-top:40px;
+    position: relative;
+}
+.lbq .banxin .message .guild ul li i{
+    position: absolute;
+    top: 6px;
+    left:50%;
+    margin-left:-12px;
+    width: 24px;
+    height: 23px;
+    background:  url(../images/index/sprite_fs@1x.png) no-repeat;
+}
+.lbq .banxin .message .guild ul li a .phone{
+    background-position: 0 -88px;
+}
+.lbq .banxin .message .guild ul li a .plane{
+    background-position: 0 -45px;
+}
+.lbq .banxin .message .guild ul li a .hotel{
+    background-position: -44px -88px;
+}
+.lbq .banxin .message .guild ul li a .game{
+    background-position: -88px 0;
+}
+.lbq .banxin .message .guild ul li a .qyg{
+    background-position: -88px -45px;
+}
+.lbq .banxin .message .guild ul li a .movie{
+    background-position:-45px -45px;
+}
+.lbq .banxin .message .guild ul li a .train{
+    background-position:-88px -89px;
+}
+.lbq .banxin .message .guild ul li a .zc{
+    background-position: -132px 0;
+}
+.lbq .banxin .message .guild ul li a .lc{
+    background-position: -132px -45px;
+}
+.lbq .banxin .message .guild ul li a .lpk{
+    background-position: -132px -88px;
+}
+.lbq .banxin .message .guild ul li a .bt{
+    background-position: -43px 0;
+}
+/*轮播区lbq end*/
+
+/*秒杀ms start*/
+.ms{
+    margin-top:10px;
+}
+.ms .top{
+    height: 55px;
+    background-color: #e01222;
+}
+.ms .top .bg{
+    width: 74px;
+    height: 55px;
+    position: relative;
+}
+.ms .top .bg .sj{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 20px;
+    height: 20px;
+    background: url(../images/index/zb_03.png) no-repeat;
+}
+.ms .top .bg .mb{
+    position: absolute;
+    top:8px;
+    left:30px;
+    width: 36px;
+    height: 36px;
+    background: url(../images/index/sprite_index@1x.png) 0 -43px no-repeat;
+
+}
+.ms .top .fl{
+    line-height: 55px;
+    color:#fff;
+}
+.ms .top .fl h2{
+    display:inline-block;
+    font-weight: normal;
+    margin-right:12px;
+}
+.ms .top .fl a{
+    position: relative;
+    color:#fff;
+    font-size:14px;
+}
+.ms .top .fl a i{
+    position: absolute;
+    top:1px;
+    right:-25px;
+    height: 24px;
+    width: 24px;
+    background: url(../images/index/sprite_index@1x.png) -150px -40px no-repeat;
+
+}
+.ms .top .fr{
+    line-height: 55px;
+    margin-right: 15px;
+}
+.ms .top .fr p {
+    color:#fff;
+}
+.ms .top .fr p span{
+    display: inline-block;
+    width: 35px;
+    height: 37px;
+    background-color: #440106;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 35px;
+    color:#f90013;
+    border-radius:5px;
+}
+.ms .top .fr p i{
+    font-size: 25px;
+    color:#440106;
+    font-weight: bold;
+}
+.ms .bottom{
+    position: relative;
+    background-color: #fff;
+}
+.ms .bottom .fl{
+    width: 1000px;
+    height: 250px;
+}
+.ms .bottom  ul {
+    background-color: #fff;
+    height: 238px;
+    padding-top:12px;
+}
+.ms .bottom ul li{
+    float: left;
+    height: 225px;
+    width: 170px;
+    padding:0 14px 0 15px;
+    text-align: center;
+    position: relative;
+}
+.ms .bottom ul li .img{
+    display: block;
+    height: 180px;
+    width: 170px;
+}
+.ms .bottom ul li .img .wz{
+    display: block;
+    height: 35px;
+    margin-top: 10px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.ms .bottom ul li i{
+    position: absolute;
+    top:0;
+    left:15px;
+    width: 30px;
+    height: 42px;
+    background:url(../images/index/bigm.png) no-repeat;
+}
+.ms .bottom ul li i.good{
+    background:url(../images/index/good.png) no-repeat;
+}
+.ms .bottom ul li i.hot{
+    background:url(../images/index/hot.png) no-repeat;
+}
+.ms .bottom ul li span,del{
+    line-height: 60px;
+}
+.ms .bottom ul li span{
+    color: #e01222;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.ms .bottom ul li del{
+    font-size: 12px;
+    color:#ccc;
+}
+.ms .bottom ul li+li{  /*li+li兄弟标签，两个标签之间添加border，只有上边有li的，才添加border*/
+    border-left:1px solid #ccc;
+}
+.ms .bottom .jdms{
+    float: right;
+    margin:12px 5px 0 0;
+}
+.ms .bottom .ltgt span{
+    position: absolute;
+    top:50%;
+    margin-top:-25px;
+    width: 20px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgba(0,0,0,.2);
+    display:none;
+}
+.ms .bottom .ltgt .lt{
+    margin-left: 5px;
+}
+.ms .bottom .ltgt .gt{
+    right:190px;
+}
+.ms .bottom .fl:hover .ltgt span{/*要与控制区域在同一div内*/
+    display: block;
+}
+/*.ms .bottom .fl .ltgt span:hover{  点击左右切换时，更换背景颜色
+    background-color: rgba(0,0,0,.5);
+}*/
+/*秒杀ms end*/
+
+/*主会场main start*/
+.main{
+    height: 580px;
+    margin-top: 20px;
+    background:  url(../images/index/636.png) center center no-repeat;
+}
+.main .banxin{
+    position: relative;
+}
+.main .mainbgt{
+    width: 187px;
+    height: 288px;
+}
+.main .mainbgt a{
+    position: absolute;
+    top:10px;
+    left:-20px;
+    width: 210px;
+    height: 288px;
+    background: url(../images/index/main-bg.png)  no-repeat;
+}
+.main .maincon{
+    width: 1000px;
+    padding-top:20px;
+}
+.main .maincon ul li{
+    float: left;
+    padding-right: 10px;
+}
+.main .maincon ul li+li{
+    margin-bottom:5px;
+}
+/*主会场main end*/
+
+/*栏目分类column start*/
+.column{
+    height: 446px;
+    margin-top: 20px;
+}
+.column .left , .middle , .right{
+    width: 390px;
+    height: 446px;
+    float: left;
+    background-color: #fff;
+    position: relative;
+}
+.column .left , .middle{
+    margin-right:10px;
+}
+.column .top{
+    height: 55px;
+    padding:0 10px 0 20px;
+    color:#fff;
+    font:20px/55px simsun;
+}
+.column .top i{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 19px;
+    width: 19px;
+    background: url(../images/index/columnl.png) no-repeat;
+}
+.column .top h3{
+    font-weight:normal;
+    float: left;
+}
+.column .top a{
+    float: right;
+    color: #fff;
+    font-family: "Microsoft Yahei";
+    position: relative;
+    margin-right:30px;
+}
+.column .top a i{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:50%;
+    margin-top:-9px;
+    background: url(../images/index/sprite_index@1x.png) -150px -40px no-repeat;
+}
+.column .left .top{
+    background-color: #4897A0;
+}
+.column .middle .top{
+    background-color: #75478D;
+}
+.column .middle .top i{
+    background:  url(../images/index/columnm.png)  no-repeat;
+}
+.column .right .top{
+    background-color: #E76F05;
+}
+.column .right .top i{
+    background:  url(../images/index/columnr.png)  no-repeat;
+}
+.column .left .top a i{
+    left:75px;
+}
+.column .middle .top a i{
+    left: 75px;
+    background: url(../images/index/sprite_index@1x.png) -150px -40px no-repeat;
+}
+.column .right .top a i{
+    left: 100px;
+     background: url(../images/index/sprite_index@1x.png) -150px -40px no-repeat;
+ }
+.column .left .content ul{
+    margin: 20px 0 0 10px;
+}
+.column .left .content ul li{
+    float: left;
+    width: 179px;
+    height: 120px;
+    border-right:1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 0 5px;
+}
+.column .left .content ul li.bdr{
+    border-right:none;
+}
+.column .left .content ul li.bdb{
+    border-bottom:none;
+}
+.column .left .content ul li a{
+    color: #49a4c1;
+}
+.column .left .content ul li a:hover{
+    color: #e01222;
+}
+.column .left .content ul li a span{
+    float: left;
+    width: 5em;
+    padding:18px 0 0 20px;
+}
+.column .left .content ul li a img{
+    vertical-align:top;
+    float: right;
+}
+.column .middle .content ul{
+    padding:0 25px;
+}
+.column .middle .content ul .litop{
+    border-bottom: 1px solid #eee;
+    padding-bottom:18px;
+}
+.column .middle .content ul li a span{
+    display: block;
+    margin: 5px 0;
+    line-height: 30px;
+}
+.column .middle .content ul li a{
+    color:#666;
+}
+.column .middle .content ul li a:hover{
+    color: #666;
+}
+.column .middle .content ul .libot a span{
+    margin-bottom:40px;
+}
+.column .middle .content ul .libot img{
+    float: left;
+}
+.column .middle .content ul .libot p{
+    margin: 40px 0 0 130px;
+    text-align: center;
+}
+.column .middle .content ul .libot p i{
+    float: left;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background-color: #c8c8c8;
+}
+.column .middle .content ul .libot p i.lasti{
+    background-color: #e01222;
+}
+.column .right .content{
+    padding:5px 12px 0 12px;
+}
+.column .right .content .contitle{
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 5px;
+}
+.column .right .content .contitle span{
+    font-size: 14px;
+    color: #666;
+}
+.column .right .content .contitle span.line{
+    padding:0 5px;
+    color: #e7e7e7;
+}
+.column .right .content .conlist{
+    margin-top: 10px;
+}
+.column .right .content .conlist ul li{
+    float: left;
+    width: 110px;
+    height: 155px;
+    text-align: center;
+    padding:10px 5px 0;
+}
+.column .right .content .conlist ul .bbd{
+    border-bottom: 1px solid #e7e7e7;
+}
+.column .right .content .conlist ul .rbd{
+    border-right: 1px solid #e7e7e7;
+}
+.column .right .content .conlist ul li p{
+    margin-top:5px;
+}
+/*栏目分类column end*/
+
+/*领券中心 lqzx start*/
+.lqzx{
+    height: 195px;
+    margin:30px auto;
+    background-color: #fff;
+}
+.lqzx .ltitle{
+    width: 140px;
+    height: 145px;
+    background-color: #ea3524;
+    color:#fff;
+    padding: 25px;
+}
+.lqzx .ltitle h2{
+    font:400 25px/35px simsun;
+}
+.lqzx .ltitle span.bbd{
+    display: block;
+    width: 45px;
+    border-bottom: 2px solid #fff;
+    margin-bottom:25px;
+}
+.lqzx .ltitle p{
+    font:12px/20px "Microsoft Yahei";
+}
+.lqzx .ltitle a{
+    display: block;
+    width: 135px;
+    height: 25px;
+    line-height: 25px;
+    margin-top:20px;
+    color:#fff;
+    border: 2px solid #fff;
+}
+.lqzx .ltitle a span.wz{
+    margin-left: 15px;
+}
+.lqzx .ltitle a i{
+    float: right;
+    width: 24px;
+    height: 24px;
+    margin: 5px 10px 0 0;
+    background: url(../images/index/sprite_index@1x.png) -150px -40px no-repeat;
+}
+.lqzx .content ul li{
+    float: left;
+    width: 199px;
+    height: 185px;
+    margin: 5px 0;
+    border-right: 1px solid #e7e7e7;
+}
+.lqzx .content ul li a{
+    display:inline-block;
+    color:#e01222;
+    width: 198px;
+    height: 185px;
+    background: url(../images/index/quan.png) no-repeat 125px;
+}
+.lqzx .content ul li.lastli{
+    border:none;
+}
+.lqzx .content ul li a{
+    display: block;
+}
+.lqzx .content ul li a .note{
+    width: 100px;
+    height: 170px;
+    margin:10px 15px 0 10px;
+    border-top:3px solid #e01222;
+}
+.lqzx .content ul li a .note p{
+    padding-left: 6px;
+}
+.lqzx .content ul li a .note .price{
+    height: 84px;
+}
+.lqzx .content ul li a .note .notep{
+    height: 47px;
+    padding-top: 10px;
+    background-color: #e7e7e7;
+ }
+.lqzx .content ul li a .note .price span{
+    font:700 40px "Microsoft Yahei";
+}
+.lqzx .content ul li a .note .more{
+    height: 25px;
+    background-color: #e01222;
+    color: #fff;
+    line-height: 25px;
+}
+/*领券中心 lqzx end*/
+
+/*separate分隔区 start*/
+.separate{
+    background-color: #e0e0e0;
+    height: 101px;
+    margin-bottom: 50px;
+}
+.separate a{
+    float: left;
+}
+.separate a img{
+    width: 396px;
+    height: 100px;
+}
+/*separate分隔区 end*/
+
+/*享品质shop start*/
+.shop{
+    margin-bottom: 20px;
+}
+.shop .shoptitle{
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom:25px;
+    background: url(../images/index/dot.png) repeat-x;
+}
+.shop .shoptitle span{
+    background-color: #f6f6f6;
+    padding: 0 10px;
+}
+.shop .shopcon .shopleft ul{
+    width: 800px;
+
+}
+.shop .shopcon .shopleft ul li{
+    float: left;
+    width: 400px;
+    height: 180px;
+    position: relative;
+}
+.shop .shopcon .shopleft ul li a{
+    display: block;
+}
+.shop .shopcon .shopleft ul li a img{
+    width: 390px;
+    height: 170px;
+}
+.shop .shopcon .shopleft ul li a .msg{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 120px;
+    height: 115px;
+    color:#fff;
+    padding-top: 55px;
+    padding-left: 20px;
+    background-color: #72bb91;
+}
+.shop .shopcon .shopleft ul li a p{
+    width: 100px;
+    font:22px/40px simsun;
+    border-top:2px solid #fff;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 8px;
+}
+.shop .shopcon .shopright .srtop{
+    margin-bottom: 7px;
+}
+.shop .shopcon .shopright .srb .leftimg{
+    margin-right: 7px;
+}
+.shop .shopcon .shopright .srb a{
+    display: inline-block;
+    position: relative;
+}
+.shop .shopcon .shopright .srb a .msg{
+    position: absolute;
+    bottom:2px;
+    left:0;
+    width: 189px;
+    height: 81px;
+    text-align: center;
+    color:#fff;
+    font-size:14px;
+    background-color:rgba(185,70,62,.3);
+}
+.shop .shopcon .shopright .srb a .msg p{
+    width: 100px;
+    font:18px/30px simsun;
+    margin:10px 0 5px 45px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+/*享品质shop end*/
+
+/*footer start*/
+.footer{
+    height: 600px;
+    margin-top: 20px;
+    background-color: #eaeaea;
+}
+.footer .footertop{
+    height: 102px;
+    border-bottom: 1px solid #dedede;
+}
+.footer .footertop ul{
+    padding:30px 0 0 36px;
+}
+.footer .footertop ul li{
+    float: left;
+    line-height: 43px;
+    padding: 0 70px 0 46px;
+    background: url(../images/index/ico_service.png) no-repeat;
+}
+.footer .footertop ul li.kuai{
+    background-position: 0 -43px;
+}
+.footer .footertop ul li.hao{
+    background-position: 0 -85px;
+}
+.footer .footertop ul li.sheng{
+    background-position: 0 -129px;
+}
+.footer .fmiddle{
+    margin-top: 25px;
+    border-bottom: 1px solid #dedede;
+}
+.footer .fmiddle dl{
+    float: left;
+    width: 198px;
+    margin-bottom: 25px;
+}
+.footer .fmiddle dl dt{
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 14px;
+    font-weight: 700;
+}
+.footer .fmiddle dl dd{
+    line-height: 22px;
+}
+.footer .fmiddle dl dd a{
+    color: #666;
+}
+.footer .fmiddle dl dd a:hover{
+    color: #ed5b34;
+}
+.footer .fmiddle .fr{
+    width: 200px;
+    height: 150px;
+    background:  url(../images/index/ico_footer.png) no-repeat;
+}
+.footer .fmiddle .fr h5{
+    text-align: center;
+    color:#666;
+    margin-bottom:20px;
+}
+.footer .fmiddle .fr p{
+    font-size:12px;
+    color: #666;
+}
+.footer .fmiddle .fr a{
+    margin-left: 140px;
+    color: #666;
+}
+.footer .fmiddle .fr a:hover{
+    color: #ed5b34;
+}
+.footer .fbottom{
+    height: 175px;
+    text-align: center;
+    margin-top: 15px;
+}
+.footer .fbottom .footernav ul{
+    margin:0 auto;
+    width: 1070px;
+}
+.footer .fbottom .footernav ul li.line{
+    border-left:1px solid #ccc;
+    height: 10px;
+    padding:0 10px;
+    margin-top:5px;
+}
+.footer .fbottom .footernav ul li{
+    line-height: 20px;
+    padding: 0 10px 15px ;
+    float: left;
+    color: #999;
+    font-size: 12px;
+}
+.footer .fbottom .footernav ul li.line{
+    padding:0;
+}
+.footer .fbottom .footernav ul li a{
+    color: #666;
+}
+.footer .fbottom  .footernav ul li a:hover{
+    color: #ed5b34;
+}
+.footer .fbottom  .msg{
+    color: #999;
+    font-size: 12px;
+    line-height:25px;
+    margin-bottom: 15px;
+}
+.footer .fbottom  .msg p a:hover{
+    color: #999;
+}
+.footer .fbottom .friendlink a{
+    display: inline-block;
+    width: 103px;
+    height: 32px;
+    background:  url(../images/index/ico_footer.png) 0 -150px no-repeat;
+}
+.footer .fbottom .friendlink .link2{
+    background-position: -104px -150px;
+}
+.footer .fbottom .friendlink .link3{
+    background-position: 0 -183px;
+}
+.footer .fbottom .friendlink .link4{
+    background-position: -104px -183px;
+}
+.footer .fbottom .friendlink .link5{
+    background-position: 0 -216px;
+}
+.footer .fbottom .friendlink .link6{
+    background-position: -104px -216px;
+}
+/*footer end*/
